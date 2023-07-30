@@ -31,7 +31,7 @@ public class Main {
                         BufferedWriter writer = new BufferedWriter(new FileWriter(config.getOutputFileName()));
 
                         Comparator<FileData> cmp = config.getDataType().equals("integer")
-                                ? Comparator.comparing(FileData::getIntegerData)
+                                ? Comparator.comparing(FileData::getLongData)
                                 : Comparator.comparing(FileData::getStringData);
 
                         String sortOrder = config.getSortOrder();
