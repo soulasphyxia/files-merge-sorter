@@ -6,7 +6,7 @@ import java.io.BufferedReader;
 @Getter
 @Setter
 public class FileData {
-    private Integer integerData;
+    private Long longData;
     private String stringData;
     private BufferedReader reader;
     private boolean isValid;
@@ -15,9 +15,9 @@ public class FileData {
         this.reader = reader;
         isValid = true;
         try{
-            this.integerData = Integer.parseInt(stringData);
+            this.longData = Long.parseLong(stringData);
         }catch (Exception e){
-            this.integerData = 0;
+            this.longData = 0L;
             this.isValid = false;
         }
     }
