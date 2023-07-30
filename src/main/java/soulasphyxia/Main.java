@@ -33,12 +33,14 @@ public class Main {
                         Comparator<FileData> cmp = config.getDataType().equals("integer")
                                 ? Comparator.comparing(FileData::getIntegerData)
                                 : Comparator.comparing(FileData::getStringData);
+
                         String sortOrder = config.getSortOrder();
                         if(sortOrder.equals("asc")) {
                             MergeSort.mergeFiles(readers,writer,cmp);
                         }else {
                             MergeSort.mergeFiles(readers,writer,cmp.reversed());
                         }
+
                         System.out.println("Файлы отсортированы!");
                     }
                 }
