@@ -22,7 +22,7 @@ git@github.com:soulasphyxia/files-merge-sorter.git
 ```
 ### 2.  Собрать проект с помощью Maven
 ```
-mvn clear install
+mvn clean install
 ```
 ### 3. Запустить программу через созданный архив в директории `/target` с указанием параметров для запуска:
 ```
