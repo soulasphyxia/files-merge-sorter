@@ -6,7 +6,7 @@
   2. Maven 3.8.1
 
 ### Библиотеки
-1.Lomdok
+1.Lombok
 ```
         <dependency>
             <groupId>org.projectlombok</groupId>
